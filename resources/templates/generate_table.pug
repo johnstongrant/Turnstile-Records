@@ -1,0 +1,25 @@
+mixin generateTable(data)
+  table#myTable
+    tr
+      th Name
+      th Email
+      th Appointment Date
+      th Time Until
+      th Reason
+      th Paying with Cash
+      th Delete Me
+    each packet in data
+      tr(id= packet.id)
+        th !{packet.contactName}
+        th
+          a(href=`mailto:${packet.contactEmail}`) !{packet.contactEmail}
+        th !{packet.aptDate}
+        th Unknown
+        th !{packet.reason}
+        if packet.cash === 'on'
+          th yes 
+        else 
+          th no
+        th 
+          button(id=packet.id).delete Delete
+

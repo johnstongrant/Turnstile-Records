@@ -1,0 +1,34 @@
+include ./nav_bar.pug
+include ./headers.pug
+
++headers('Turnsile Records: Reach Out', ['/css/main.css', '/css/main.dark.css'], ['/js/main.js', '/js/contact.js'])
++navbar()
+.headers
+  h1 Come in and see us!
+form(action='/contact' method='post')
+  #contact.light-box
+    div
+      label(for='name_field') Name:
+      input#name_field(required='' type='text' name='name_field')
+    div
+      label(for='email_field') Email:
+      input#email_field(required='' type='email' name='email_field')
+    div
+      label(for='date_field') What day were you planning:
+      input#date_field(required='' type='date' name='date_field')
+    div
+      select#choice(name='reason')
+        option(value='' disabled='' selected='' hidden='') Choose a reason
+        // Found this on w3 schools, wanted a placeholder for style
+        option(value='trading') Trading
+        option(value='buying') Buying
+        option(value='selling') Selling
+        option(value='visiting') Visit
+    div
+      label(for='cf') Check if trading/buying/selling with cash
+      input#cf(type='checkbox' name='check_field')
+    div
+      span#result
+    div
+      label(for='submit_button') Submit here:
+      input#submit_button(type='submit' name='submit_button' value='Enter')

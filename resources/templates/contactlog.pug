@@ -1,0 +1,15 @@
+include ./nav_bar.pug
+include ./headers.pug
+include ./generate_table.pug
+
++headers('Contact List', ['/css/main.css', '/css/main.dark.css'], ['/js/main.js','/js/table.js'])
++navbar()
+#sales_box
+  h3 Set Sale
+  label(for='sales_message') Sales Message:
+  input#sales_message(type='text' name='sales_message')
+  button.set_sale Set Sale
+  button.end_sale End Sale
+.headers
+  h1  Contact Appointments 
++generateTable(data)

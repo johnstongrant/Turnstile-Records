@@ -1,0 +1,40 @@
+include ./nav_bar.pug
+include ./headers.pug
+
++headers('Turnstile Records Reviews', ['/css/main.css','/css/main.dark.css'], ['/js/main.js'])
++navbar()
+// Added inline CSS style border to remove outdated attributes given in embedded html
+iframe.vid(style='border: none' width='560' height='315' src='https://www.youtube.com/embed/HE6IZQbFoUc?si=KXsQ2qUt5XNhTfYB' title='YouTube video player' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+.row
+  .column
+    .review.light-box
+      p.review-body
+        | I was able to find records I've been looking for for years. So grateful to be a part of this community.
+      p.reviewer-name Brian Smith
+  .column
+    .review.light-box
+      p.review-body
+        | When I read they carried soaps I almost close the website, but after seeing they offer samples I simply had to buy one.
+      p.reviewer-name Carl Havoc
+.row
+  .column
+    .review.light-box
+      p.review-body
+        | What really caught my attention was their emmaculate selction of Tame Impala, did you know its just one guy?
+      p.reviewer-name Melissa Matthews
+  .column
+    .review.light-box
+      p.review-body
+        | Where do I start? This website is simply too good. when I found out how to make money off of selling my own records I was so pleased.
+      p.reviewer-name Driving Crooner
+.row
+  .column
+    .review.light-box
+      p.review-body
+        | 10 out of 10. Bought a Radiohead vinyl for my son and he hasn't left his room in days! Bliss! Thank you Turnstile Records.
+      p.reviewer-name Jonny Greenwood
+  .column
+    .review.light-box
+      p.review-body
+        | Erm wurt? I can buy and sell vinyl? Now I can finally show off my collection. Thank you Turnstile Records! Awesome sauce 😎;
+      p.reviewer-name IluvReddit

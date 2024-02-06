@@ -1,0 +1,10 @@
+include ./nav_bar.pug
+include ./headers.pug
+
++headers('Oops', ['/css/main.css', '/css/main.dark.css'], ['/js/main.js'])
++navbar()
+p#not_found Oops!
+#content.light-box
+  p
+    | As you open the door you realized its been filled up by brick. There is no path forward. Turn back now
+  a(href='/') Click me to return.

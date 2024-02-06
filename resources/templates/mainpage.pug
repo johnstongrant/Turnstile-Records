@@ -1,0 +1,27 @@
+include ./nav_bar.pug
+include ./headers.pug
++headers('Turnstile Records', ['/css/main.css','/css/main.dark.css'], ['/js/main.js','/js/sales.js'])
++navbar()
+#sales_banner.sales_banner_off
+  | I should be hidden.
+.headers
+  h1 Turnstile Records
+  h2 The public way to listen
+img.image_center(src='/images/main.jpg' alt='record store')
+#content.light-box
+  p
+    | Welcome to Turnstile Records, the newest way to trade all things records. Being a new company in the world of vinyl doesn't mean
+    | we are new to vinyl itself. With over 30 years of personal colletions to bring to the table we are sure you will find something
+    | worth looking into. Besides our house inventory to look through we are also a place for buying and selling,
+    | and we stock other items you didn't know you needed such as:
+  ol
+    li Soaps and lotions
+    li Clothing and accessories
+    li Vinyl services and additions
+  p
+    | As you can see we are 
+    strong more
+    |  than just 
+    em another vinyl reseller
+    |  we are here to build a community worth joining! Please look around and come in and see us!
+    |         We love to meet our community members.
